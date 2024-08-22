@@ -1967,12 +1967,19 @@ highlight! link mkdId Yellow
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 if has('nvim-0.8')
-  highlight @markup.heading.1.markdown cterm=italic,bold ctermfg=208 guifg=#b94c07
-  highlight @markup.heading.2.markdown cterm=italic,bold ctermfg=214 guifg=#b94c07
-  highlight @markup.heading.3.markdown cterm=italic,bold ctermfg=11 guifg=#b94c07
-  highlight @markup.heading.4.markdown cterm=italic,bold ctermfg=223 guifg=#b94c07
-  highlight @markup.heading.5.markdown cterm=italic,bold ctermfg=230 guifg=#b94c07
-  highlight @markup.heading.6.markdown cterm=italic,bold ctermfg=255 guifg=#b94c07
+  highlight @markup.heading.1.markdown cterm=bold ctermfg=208 gui=italic,bold guifg=#fe8019
+  highlight @markup.heading.2.markdown cterm=bold ctermfg=214 gui=italic,bold guifg=#3c3836
+  highlight @markup.heading.3.markdown cterm=bold ctermfg=11  gui=italic,bold guifg=#ffff60
+  highlight @markup.heading.4.markdown cterm=bold ctermfg=223 gui=italic,bold guifg=#ebdbb2
+  highlight @markup.heading.5.markdown cterm=bold ctermfg=230 gui=italic,bold guifg=#f9f5d7
+  highlight @markup.heading.6.markdown cterm=bold ctermfg=255 gui=italic,bold guifg=#ffffff
+  " for suse nvim 0.10
+  highlight @text.title.1 cterm=bold ctermfg=208 gui=bold guifg=#fb4934
+  highlight @text.title.2 cterm=bold ctermfg=214 gui=bold guifg=#ee5f00
+  highlight @text.title.3 cterm=bold ctermfg=11  gui=bold guifg=#fe8019
+  highlight @text.title.4 cterm=bold ctermfg=223 gui=bold guifg=#fabd2f
+  highlight @text.title.5 cterm=bold ctermfg=230 gui=bold guifg=#faff60
+  highlight @text.title.6 cterm=bold ctermfg=255 gui=bold guifg=#ffffff
   highlight! link @markup.heading.1.marker.markdown @conceal
   highlight! link @markup.heading.2.marker.markdown @conceal
   highlight! link @markup.heading.3.marker.markdown @conceal
