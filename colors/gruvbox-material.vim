@@ -1967,12 +1967,12 @@ highlight! link mkdId Yellow
 " }}}
 " nvim-treesitter/nvim-treesitter {{{
 if has('nvim-0.8')
-  highlight! link @markup.heading.1.markdown markdownH1
-  highlight! link @markup.heading.2.markdown markdownH2
-  highlight! link @markup.heading.3.markdown markdownH3
-  highlight! link @markup.heading.4.markdown markdownH4
-  highlight! link @markup.heading.5.markdown markdownH5
-  highlight! link @markup.heading.6.markdown markdownH6
+  highlight @markup.heading.1.markdown cterm=italic,bold ctermfg=208 guifg=#b94c07
+  highlight @markup.heading.2.markdown cterm=italic,bold ctermfg=214 guifg=#b94c07
+  highlight @markup.heading.3.markdown cterm=italic,bold ctermfg=11 guifg=#b94c07
+  highlight @markup.heading.4.markdown cterm=italic,bold ctermfg=223 guifg=#b94c07
+  highlight @markup.heading.5.markdown cterm=italic,bold ctermfg=230 guifg=#b94c07
+  highlight @markup.heading.6.markdown cterm=italic,bold ctermfg=255 guifg=#b94c07
   highlight! link @markup.heading.1.marker.markdown @conceal
   highlight! link @markup.heading.2.marker.markdown @conceal
   highlight! link @markup.heading.3.marker.markdown @conceal
