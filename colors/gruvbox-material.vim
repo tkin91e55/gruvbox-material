@@ -680,7 +680,7 @@ highlight! link TSType YellowItalic
 highlight! link TSTypeBuiltin YellowItalic
 highlight! link TSTypeDefinition YellowItalic
 highlight! link TSTypeQualifier Orange
-call gruvbox_material#highlight('TSURI', s:palette.blue, s:palette.none, 'underline')
+call gruvbox_material#highlight('TSURI', s:palette.purple, s:palette.none, 'underline')
 highlight! link TSVariable Fg
 highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8')
@@ -734,7 +734,7 @@ if has('nvim-0.8')
   highlight! link @markup.environment.name TSEnvironmentName
   highlight! link @markup.heading TSTitle
   highlight! link @markup.link TSTextReference
-  highlight! link @markup.link.label TSStringSpecial
+  highlight! link @markup.link.label TSLiteral
   highlight! link @markup.link.url TSURI
   highlight! link @markup.list TSPunctSpecial
   highlight! link @markup.list.checked Green
