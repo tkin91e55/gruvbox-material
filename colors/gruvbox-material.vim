@@ -75,7 +75,7 @@ endif
 call gruvbox_material#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
 call gruvbox_material#highlight('Search', s:palette.bg0, s:palette.bg_green)
 highlight! link CurSearch IncSearch
-call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.red)
+call gruvbox_material#highlight('ColorColumn', s:palette.none, s:palette.bg5)
 if s:configuration.ui_contrast ==# 'low'
   call gruvbox_material#highlight('Conceal', s:palette.bg5, s:palette.none)
 else
